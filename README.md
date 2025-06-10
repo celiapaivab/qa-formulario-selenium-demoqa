@@ -3,6 +3,8 @@
 ![QA](https://img.shields.io/badge/Testes-Automação-blue)
 ![Ferramenta](https://img.shields.io/badge/Selenium-Python-green)
 ![Tipo de Teste](https://img.shields.io/badge/Testes-Funcional-lightgrey)
+![Python application](https://github.com/celiapaivab/qa-formulario-selenium-demoqa/actions/workflows/python-app.yml/badge.svg?branch=main)
+
 
 Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na automação de testes para o formulário de cadastro do site [DemoQA](https://demoqa.com/automation-practice-form).
 
