@@ -28,14 +28,8 @@ class FormPage:
 
     def set_date_of_birth(self, date_str):
         date_input = self.driver.find_element(By.ID, "dateOfBirthInput")
-
-        # Garante que está visível
         self.driver.execute_script("arguments[0].scrollIntoView(true);", date_input)
-
-        # Usa JavaScript para clicar, ignorando overlays
         self.driver.execute_script("arguments[0].click();", date_input)
-
-        # Limpa e insere a data
         date_input.clear()
         date_input.send_keys(date_str)
         date_input.send_keys(Keys.ENTER)
@@ -58,12 +52,15 @@ class FormPage:
         self.driver.find_element(By.ID, "currentAddress").send_keys(address)
 
     def select_state(self, state):
-        self.driver.find_element(By.ID, "react-select-3-input").send_keys(state)
-        self.driver.find_element(By.ID, "react-select-3-input").send_keys(Keys.ENTER)
+        state_input = self.driver.find_element(By.ID, "react-select-3-input")
+        state_input.send_keys(state)
+        state_input.send_keys(Keys.ENTER)
 
     def select_city(self, city):
-        self.driver.find_element(By.ID, "react-select-4-input").send_keys(city)
-        self.driver.find_element(By.ID, "react-select-4-input").send_keys(Keys.ENTER)
+        city_input = self.driver.find_element(By.ID, "react-select-4-input")
+        city_input.send_keys(city)
+        city_input.send_keys(Keys.ENTER)
 
     def submit_form(self):
-        self.driver.find_element(By.ID, "submit").click()
+        submit_btn = self.driver.find_element(By.ID, "submit")
+        self.driver.execute_script("arguments[0].click();", submit_btn)

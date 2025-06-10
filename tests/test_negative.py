@@ -1,5 +1,7 @@
 import pytest
 from pages.form_page import FormPage
+from utils.helpers import take_screenshot
+
 
 @pytest.mark.parametrize("email", ["", "invalid@", "user@.com"])
 def test_invalid_email_submission(driver, email):
@@ -18,6 +20,7 @@ def test_invalid_email_submission(driver, email):
     form.select_state("NCR")
     form.select_city("Delhi")
     form.submit_form()
+    take_screenshot(driver, f"invalid_email_{email.replace('@', '_at_').replace('.', '_dot_')}")
 
 
 
@@ -37,6 +40,7 @@ def test_missing_first_name(driver):
     form.select_state("NCR")
     form.select_city("Delhi")
     form.submit_form()
+    take_screenshot(driver, "missing_first_name")
 
 
 def test_invalid_mobile_number(driver):
@@ -55,3 +59,4 @@ def test_invalid_mobile_number(driver):
     form.select_state("NCR")
     form.select_city("Delhi")
     form.submit_form()
+    take_screenshot(driver, "invalid_mobile_number")

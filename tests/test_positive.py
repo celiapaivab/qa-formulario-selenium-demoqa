@@ -1,5 +1,5 @@
 from pages.form_page import FormPage
-
+from utils.helpers import take_screenshot
 
 def test_fill_form_success(driver):
     form = FormPage(driver)
@@ -16,6 +16,7 @@ def test_fill_form_success(driver):
     form.fill_address("Rua das Flores, 123")
     form.select_state("NCR")
     form.select_city("Delhi")
+    take_screenshot(driver, "formulario_preenchido")
     form.submit_form()
 
     assert "Thanks for submitting the form" in driver.page_source
