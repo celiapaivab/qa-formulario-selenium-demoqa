@@ -1,2 +1,56 @@
-# qa-formulario-selenium-demoqa
-Testes automatizados com Selenium WebDriver em formulário do site DemoQA
+# Automação de Testes – Formulário DemoQA
+
+![QA](https://img.shields.io/badge/Testes-Automação-blue)
+![Ferramenta](https://img.shields.io/badge/Selenium-Python-green)
+![Tipo de Teste](https://img.shields.io/badge/Testes-Funcional-lightgrey)
+
+Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na automação de testes para o formulário de cadastro do site [DemoQA](https://demoqa.com/automation-practice-form).
+
+---
+
+## 📌 Objetivos do Projeto
+
+- Automatizar o preenchimento e submissão do formulário  
+- Validar campos obrigatórios e formatos de dados (e-mail, telefone)  
+- Implementar captura de screenshots para análise dos resultados
+
+---
+
+## 🔧 Tecnologias e Ferramentas Utilizadas
+
+- Python 3.13  
+- Selenium WebDriver  
+- pytest  
+- ChromeDriver  
+
+---
+
+## 📋 Atividades Realizadas
+
+- Implementação do padrão Page Object Model (POM) para organizar o código  
+- Desenvolvimento de testes positivos e negativos para os campos do formulário  
+- Integração de captura de screenshots em casos de sucesso e falha
+
+
+---
+
+## 🚀 Como usar
+
+- Clone este repositório:  
+  `git clone https://github.com/seu-usuario/seu-repositorio.git`  
+  `cd seu-repositorio`
+
+- Crie e ative o ambiente virtual (opcional, mas recomendado):  
+  `python -m venv venv`  
+  `source venv/bin/activate`  (Linux/macOS)  
+  `venv\Scripts\activate`  (Windows)
+
+- Instale as dependências:  
+  `pip install -r requirements.txt`
+
+- Baixe o ChromeDriver compatível com sua versão do Chrome e adicione ao PATH.
+
+- Execute os testes com pytest:  
+  `pytest -s tests/`
+
+- As screenshots serão salvas na pasta `screenshots/` (criada automaticamente).
