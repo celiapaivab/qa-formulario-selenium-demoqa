@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-import time
 
 class FormPage:
     def __init__(self, driver):
