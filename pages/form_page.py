@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+import os
 
 class FormPage:
     def __init__(self, driver):
@@ -19,15 +20,23 @@ class FormPage:
         self.driver.find_element(By.ID, "userEmail").send_keys(email)
 
     def select_gender(self, gender):
-        self.driver.find_element(By.XPATH, f"//label[text()='{gender}']").click()
+        gender_label = self.driver.find_element(By.XPATH, f"//label[text()='{gender}']")
+        self.driver.execute_script("arguments[0].click();", gender_label)
 
     def fill_mobile_number(self, number):
         self.driver.find_element(By.ID, "userNumber").send_keys(number)
 
     def set_date_of_birth(self, date_str):
         date_input = self.driver.find_element(By.ID, "dateOfBirthInput")
-        date_input.click()
-        date_input.send_keys(Keys.CONTROL + "a")
+
+        # Garante que está visível
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", date_input)
+
+        # Usa JavaScript para clicar, ignorando overlays
+        self.driver.execute_script("arguments[0].click();", date_input)
+
+        # Limpa e insere a data
+        date_input.clear()
         date_input.send_keys(date_str)
         date_input.send_keys(Keys.ENTER)
 
@@ -38,10 +47,12 @@ class FormPage:
             input_subject.send_keys(Keys.ENTER)
 
     def select_hobby(self, hobby):
-        self.driver.find_element(By.XPATH, f"//label[text()='{hobby}']").click()
+        hobby_checkbox = self.driver.find_element(By.XPATH, f"//label[text()='{hobby}']")
+        self.driver.execute_script("arguments[0].click();", hobby_checkbox)
 
     def upload_picture(self, path):
-        self.driver.find_element(By.ID, "uploadPicture").send_keys(path)
+        absolute_path = os.path.abspath(path)
+        self.driver.find_element(By.ID, "uploadPicture").send_keys(absolute_path)
 
     def fill_address(self, address):
         self.driver.find_element(By.ID, "currentAddress").send_keys(address)
