@@ -32,7 +32,22 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 - Implementação do padrão Page Object Model (POM) para organizar o código  
 - Desenvolvimento de testes positivos e negativos para os campos do formulário  
 - Integração de captura de screenshots em casos de sucesso e falha
+- Verificação de exibição do modal de sucesso apenas em envios válidos  
+- Automação integrada ao GitHub Actions
 
+---
+
+## ✅ Testes Automatizados
+
+Este projeto cobre testes de:
+
+- ✅ **Preenchimento completo e válido do formulário** (positivo)
+- ❌ **Tentativas de envio com dados inválidos ou ausentes** (negativo), como:
+  - E-mails inválidos ou vazios
+  - Nome ausente
+  - Número de celular inválido
+
+Todos os testes validam se o modal de confirmação **só é exibido em envios válidos**.
 
 ---
 
