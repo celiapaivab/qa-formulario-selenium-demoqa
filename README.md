@@ -38,19 +38,26 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 ## 🚀 Como usar
 
-- Clone este repositório:  
+1. Clone este repositório:
+  ```bash
   `git clone https://github.com/seu-usuario/seu-repositorio.git`  
   `cd seu-repositorio`
-
-- Crie e ative o ambiente virtual (opcional, mas recomendado):  
-  `python -m venv venv`  
-  `source venv/bin/activate`  (Linux/macOS)  
-  `venv\Scripts\activate`  (Windows)
-
-- Instale as dependências:  
-  `pip install -r requirements.txt`
-
-- Execute os testes com pytest:  
-  `pytest -s tests/`
-
+  ```
+  
+2. Crie e ative o ambiente virtual (opcional, mas recomendado):
+  ```bash  
+  python -m venv venv  
+  source venv/bin/activate  (Linux/macOS)  
+  venv\Scripts\activate  (Windows)
+  ```
+  
+3. Instale as dependências:
+  ```bash
+  pip install -r requirements.txt
+  ```
+  
+4. Execute os testes com pytest:
+  ```bash
+  pytest -s tests/
+  ```
 - As screenshots serão salvas na pasta `screenshots/` (criada automaticamente).
