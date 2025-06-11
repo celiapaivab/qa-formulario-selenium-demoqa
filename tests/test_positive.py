@@ -19,4 +19,6 @@ def test_fill_form_success(driver):
     take_screenshot(driver, "formulario_preenchido")
     form.submit_form()
 
-    assert "Thanks for submitting the form" in driver.page_source
+    assert form.is_modal_displayed(), "O modal de confirmação não apareceu após o envio do formulário."
+
+    form.close_modal()

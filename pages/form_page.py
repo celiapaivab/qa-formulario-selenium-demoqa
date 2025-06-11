@@ -1,6 +1,10 @@
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import os
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 class FormPage:
     def __init__(self, driver):
@@ -64,3 +68,19 @@ class FormPage:
     def submit_form(self):
         submit_btn = self.driver.find_element(By.ID, "submit")
         self.driver.execute_script("arguments[0].click();", submit_btn)
+
+    def wait_for_modal(self, timeout=10):
+        wait = WebDriverWait(self.driver, timeout)
+        try:
+            modal = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "modal-content")))
+            return modal
+        except TimeoutException:
+            return None
+
+    def is_modal_displayed(self, timeout=5):
+        return self.wait_for_modal(timeout) is not None
+
+    def close_modal(self):
+        close_btn = self.driver.find_element(By.ID, "closeLargeModal")
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", close_btn)
+        self.driver.execute_script("arguments[0].click();", close_btn)
