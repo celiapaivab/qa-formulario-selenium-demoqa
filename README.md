@@ -18,12 +18,12 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 ---
 
-## 🔧 Tecnologias e Ferramentas Utilizadas
+## 🔧 Tecnologias utilizadas
 
-- Python 3.13  
-- Selenium WebDriver  
-- pytest  
-- ChromeDriver  
+- Python
+- Pytest
+- Selenium WebDriver
+- GitHub Actions
 
 ---
 
@@ -49,8 +49,6 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 - Instale as dependências:  
   `pip install -r requirements.txt`
-
-- Baixe o ChromeDriver compatível com sua versão do Chrome e adicione ao PATH.
 
 - Execute os testes com pytest:  
   `pytest -s tests/`
