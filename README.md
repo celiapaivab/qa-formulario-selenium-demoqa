@@ -12,7 +12,7 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 ---
 
-## 📌 Objetivos do Projeto
+## 🎯 Objetivo do Projeto
 
 - Automatizar o preenchimento e submissão do formulário  
 - Validar campos obrigatórios e formatos de dados (e-mail, telefone)  
