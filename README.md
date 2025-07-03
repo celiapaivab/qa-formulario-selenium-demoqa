@@ -33,8 +33,8 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 1. Clone este repositório:
   ```bash
-  `git clone https://github.com/seu-usuario/seu-repositorio.git`  
-  `cd seu-repositorio`
+  `git clone https://github.com/celiapaivab/qa-formulario-selenium-demoqa`  
+  `cd qa-formulario-selenium-demoqa`
   ```
   
 2. Crie e ative o ambiente virtual (opcional, mas recomendado):
