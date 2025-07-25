@@ -4,6 +4,8 @@
 ![Ferramenta](https://img.shields.io/badge/Selenium-Python-green)
 ![Tipo de Teste](https://img.shields.io/badge/Testes-Funcional-lightgrey)
 ![Python application](https://github.com/celiapaivab/qa-formulario-selenium-demoqa/actions/workflows/python-app.yml/badge.svg?branch=main)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/celia-bruno)
+
 
 ---
 
