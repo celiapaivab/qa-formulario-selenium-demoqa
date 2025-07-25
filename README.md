@@ -1,65 +1,69 @@
-# Automação de Testes – Formulário DemoQA
+# Automated Testing — DemoQA Form
 
-![QA](https://img.shields.io/badge/Testes-Automação-blue)
-![Ferramenta](https://img.shields.io/badge/Selenium-Python-green)
-![Tipo de Teste](https://img.shields.io/badge/Testes-Funcional-lightgrey)
+![QA](https://img.shields.io/badge/Testing-Automation-blue)
+![Tool](https://img.shields.io/badge/Selenium-Python-green)
+![Test Type](https://img.shields.io/badge/Testing-Functional-lightgrey)
 ![Python application](https://github.com/celiapaivab/qa-formulario-selenium-demoqa/actions/workflows/python-app.yml/badge.svg?branch=main)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/celia-bruno)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/celia-bruno)
 
 
 ---
 
-## 📌 Sobre o Projeto
-Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na automação de testes para o formulário de cadastro do site [DemoQA](https://demoqa.com/automation-practice-form).
+## 📌 Project Overview
+
+This project was developed as part of my **QA learning journey**, focusing on **automated testing** for the registration form on [DemoQA](https://demoqa.com/automation-practice-form).
+
+The purpose of this project is to practice the implementation of automation tools and good testing practices. Since DemoQA is a demo site for training purposes, no real bugs were found or reported — the focus was on simulating realistic scenarios and validating both positive and negative flows.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Goals
 
-- Automatizar o preenchimento e submissão do formulário  
-- Validar campos obrigatórios e formatos de dados (e-mail, telefone)  
-- Implementar captura de screenshots para análise dos resultados
-
----
-
-## 🔧 Tecnologias e Ferramentas
-
-- Python
-- Pytest
-- Selenium WebDriver
-- GitHub Actions (para CI/CD)
+- Automate the form filling and submission process.
+- Validate required fields and data formats (email, phone).
+- Capture screenshots for result analysis.
+- Run tests automatically with GitHub Actions (CI/CD).
 
 ---
 
-## ▶️ Como Executar
+## 🔧 Technologies and Tools
 
-1. Clone este repositório:
+- **Python**
+- **Pytest**
+- **Selenium WebDriver**
+- **GitHub Actions** (CI/CD)
+
+---
+
+## ▶️ How to Run
+
+1. Clone this repository:
   ```bash
   git clone https://github.com/celiapaivab/qa-formulario-selenium-demoqa
   cd qa-formulario-selenium-demoqa
   ```
   
-2. Crie e ative o ambiente virtual (opcional, mas recomendado):
+2. Create and activate a virtual environment:
   ```bash  
   python -m venv venv  
   source venv/bin/activate  (Linux/macOS)  
   venv\Scripts\activate  (Windows)
   ```
   
-3. Instale as dependências:
+3. Install the dependencies:
   ```bash
   pip install -r requirements.txt
   ```
   
-4. Execute os testes com pytest:
+4. Run the tests with Pytest:
   ```bash
   pytest -s tests/
   ```
-- As screenshots serão salvas na pasta `screenshots/` (criada automaticamente).
+- Screenshots will be saved automatically in the screenshots/ folder.
 
 ---
 
-## 🧾 Resultado
+## 🧾 Results
 
 - Testes automatizados de fluxo positivo e negativo implementados e executados com sucesso.  
 - Validação correta da exibição do modal de confirmação apenas em envios válidos.  
@@ -68,38 +72,30 @@ Este projeto foi desenvolvido como parte do meu aprendizado em QA, focando na au
 
 ---
 
-## 📚 Aprendizados
+## 📚 What I Learned
 
-- Aplicação do padrão **Page Object Model (POM)** para organização do código.  
-- Desenvolvimento de testes funcionais automatizados utilizando Selenium e Pytest.  
-- Implementação de captura e armazenamento de screenshots para evidências.  
-- Configuração de integração contínua via GitHub Actions para testes automatizados.
-
----
-
-## 💡 Melhorias Futuras
-
-- Adicionar testes para validação de campos adicionais do formulário.  
-- Incluir relatórios HTML detalhados após execução dos testes.  
-- Expandir a suíte para testes de outros formulários e funcionalidades do site DemoQA.  
-- Automatizar o tratamento de diferentes navegadores e resoluções para testes cross-browser.
+- Applied the **Page Object Model (POM)** pattern to organize the test code.
+- Developed functional automated tests using Selenium and Pytest.
+- Implemented screenshot capture and storage for evidence.
+- Configured continuous integration with GitHub Actions for automated test execution.
 
 ---
 
-## 📂 Arquivos do Projeto
+## 💡 Future Improvements
 
-- `tests/` – Scripts de teste automatizados em Python  
-- `pages/` – Implementação do Page Object Model para a página do formulário  
-- `screenshots/` – Capturas de tela geradas durante a execução dos testes  
-- `requirements.txt` – Lista de dependências Python  
-- `.github/workflows/python-app.yml` – Configuração da pipeline de GitHub Actions
+- Add tests to validate additional form fields.
+- Include detailed HTML reports after test execution.
+- Expand the test suite to cover other forms and functionalities on the DemoQA site.
+- Automate execution on different browsers and screen resolutions for cross-browser testing.
 
 ---
 
-## 🇺🇸 Project Summary
+## 📂 Project Files
 
-This project was developed as part of my QA learning journey, focusing on test automation for the registration form on the DemoQA website.  
+- `tests/` — Automated test scripts in Python  
+- `pages/` — Page Object Model implementation for the form page  
+- `screenshots/` — Screenshots generated during test execution  
+- `requirements.txt` — Python dependencies list  
+- `.github/workflows/python-app.yml` — GitHub Actions pipeline configuration
 
-The main goal is to ensure the correct functionality of the form, including mandatory field validations and submission flows. Automated tests cover both positive and negative scenarios, capturing screenshots as evidence.  
-
-The project also includes a CI pipeline configured with GitHub Actions to run tests automatically on push events.
+---
