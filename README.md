@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project was developed as part of my **QA learning journey**, focusing on **automated testing** for the registration form on [DemoQA](https://demoqa.com/automation-practice-form).
 
@@ -17,7 +17,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 - Automate the form filling and submission process.
 - Validate required fields and data formats (email, phone).
@@ -26,7 +26,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 🔧 Technologies and Tools
+## Technologies and Tools
 
 - **Python**
 - **Pytest**
@@ -35,7 +35,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone this repository:
   ```bash
@@ -63,7 +63,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 🧾 Results
+## Results
 
 - Testes automatizados de fluxo positivo e negativo implementados e executados com sucesso.  
 - Validação correta da exibição do modal de confirmação apenas em envios válidos.  
@@ -72,7 +72,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 - Applied the **Page Object Model (POM)** pattern to organize the test code.
 - Developed functional automated tests using Selenium and Pytest.
@@ -81,7 +81,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 - Add tests to validate additional form fields.
 - Include detailed HTML reports after test execution.
@@ -90,7 +90,7 @@ The purpose of this project is to practice the implementation of automation tool
 
 ---
 
-## 📂 Project Files
+## Project Files
 
 - `tests/` — Automated test scripts in Python  
 - `pages/` — Page Object Model implementation for the form page  
